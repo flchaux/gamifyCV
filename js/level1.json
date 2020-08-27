@@ -1,0 +1,50 @@
+{
+    "background": "img/background.png",
+    "size": {
+        "x": 5388,
+        "y": 402
+    },
+    "background-repeat-x": false,
+    "background-repeat-y": false,
+    "gameObjects": [
+        {
+            "tags": ["checkpoint"],
+            "size": {
+                "x": 100,
+                "y": 100
+            },
+            "positions": [
+                {"x": 449, "y": 0, "size": {
+                    "x": 230,
+                    "y": 400
+                },
+                "id": "1"},
+                {"x": 1347, "y": 0, "size": {
+                    "x": 230,
+                    "y": 400
+                },
+                "id": "2"},
+                {"x": 2245, "y": 0, "size": {
+                    "x": 230,
+                    "y": 400
+                },
+                "id": "3"},
+                {"x": 3142, "y": 0, "size": {
+                    "x": 230,
+                    "y": 400
+                },
+                "id": "4"},
+                {"x": 4040, "y": 0, "size": {
+                    "x": 50,
+                    "y": 400
+                },
+                "id": "5"},
+                {"x": 4725, "y": 0, "size": {
+                    "x": 50,
+                    "y": 400
+                },
+                "id": "6"}
+            ]
+        }
+    ]
+}

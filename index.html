@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Florian CHAUX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="js/libs/mootools/mootools-core-full-compat.js"></script>
+        <script type="text/javascript" src="js/engine.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <style type="text/css">
+            html{
+                background: black;
+                font-size: 22px;
+                font-family: "Rayman";
+                color: white;
+            }
+            #CV{
+                position: absolute;
+                top: 100px;
+                width: 350px;
+                height: 600px;
+                color: white;
+                left: 10px;
+                text-align: right;
+            }
+            #LienCV{
+                position: absolute;
+                right: 10px;
+                top: 330px;
+                width: 350px;
+                height: 200px;
+                text-align: center;
+                
+            }
+            ul{
+                margin: 0px;
+                padding: 0px;
+            }
+            li{
+                list-style: none;
+                margin: 10px;
+                
+            }
+            li:nth-child(even){
+                color: lightgrey;
+            }
+            #CenterWindow{
+                margin: auto;
+                text-align: center;
+                position: relative;
+                top: 100px;
+                height: 700px;
+            }
+            #Laptop{
+                margin: auto;
+                text-align: center;
+                position: absolute;
+                top: 50px;
+                height: 670px;
+                padding-top: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("img/laptop.png");
+                width: 900px;
+                left: 50%;
+                margin-left: -450px;
+            }
+            @font-face {
+                font-family: "Assassin";
+                src: url('fonts/Assassin.ttf');
+            }
+            @font-face {
+                font-family: "Rayman";
+                src: url('fonts/Rayman.ttf');
+            }
+            a, a:visited{
+                color: white; 
+                text-decoration: none;
+            }
+            h2{
+                position: absolute;
+                width: 800px;
+                text-align: center;
+                top: 640px;
+                margin-left: -400px;
+                left: 50%;
+                font-size: 1.2em;
+                color: black;
+                z-index: 999;
+            }
+            h1{
+                position: absolute;
+                width: 99%;
+                text-align: center;
+                top: 0px;
+                font-size: 1.3em;
+            }
+            #EndMessage{
+                width: 500px;
+                position: absolute;
+                left: 50%;
+                margin-left: -250px;
+                height: 49px;
+                border: solid 2px lightgrey;
+                border-bottom: none;
+                background: black;
+                text-align: center;
+                top: 430px;
+                padding: 10px;
+                border-radius: 12px 12px 0px 0px;
+                font-size: 0.8em;
+                opacity: 0.8;
+            }
+            #EndMessage img{
+                
+                vertical-align: middle;
+            }
+            #WaitingScreen{
+                position: fixed;
+                width: 100%;
+                margin: 0px;
+                height: 100%;
+                background: black;
+                z-index: 1000;
+                text-align: center;
+                padding-top: 400px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="WaitingScreen">Loading in progress...</div>
+        <h1>CV Florian CHAUX - Développeur polyvalent</h1>
+        <h2>Appuyez sur la flèche droite pour faire avancer le personnage et découvrir qui je suis</h2>
+        <div id="CenterWindow">
+            <canvas id="GameWindow" width="730" height="402"></canvas>
+        </div>
+        <div id="Laptop"></div>
+        <div>
+            <ul id="CV">
+                
+            </ul>
+        </div>
+        <div id="EndMessage">
+            <a href="CV_FlorianCHAUX.pdf" target="_blank"><img src="img/cv_icon_red.png" alt="Télécharger mon CV au format PDF" width="30" />
+                Télécharger mon CV complet au format PDF</a>
+        </div>
+        <div id="LienCV"><a href="CV_FlorianCHAUX.pdf" target="_blank"><img src="img/cv_icon_red.png" alt="Télécharger mon CV au format PDF" width="100" /><br/>Télécharger mon CV au format PDF</a></div>
+        <script type="text/javascript">
+            var loadingInProgress = $('WaitingScreen');
+
+        </script>
+    </body>
+</html>
